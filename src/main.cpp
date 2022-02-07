@@ -1,5 +1,5 @@
 // Include standard headers
-#include <stdio.h>
+#include <cstdio>
 #include <iostream>
 
 // Include GLEW
@@ -35,9 +35,9 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Open a window and create its OpenGL context
-    window = glfwCreateWindow( 1024, 768, "Tutorial 01", NULL, NULL);
+    window = glfwCreateWindow( 1024, 768, "Tutorial 01", nullptr, nullptr);
 
-    if( window == NULL ){
+    if( window == nullptr ){
         std::cerr << "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials." << std::endl;
         getchar();
         glfwTerminate();
